@@ -1,0 +1,11 @@
+ping
+nmap
+nmap -F
+nmap -sV
+nmap -p
+nmap -p T:7777,973
+nmap 0.0.0.0,1,2,3
+nmap 0.0.0.0-256
+nmap 0.0.0.*
+nmap --top-ports 10 `url`
+nmap `url`
